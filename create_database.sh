@@ -24,7 +24,7 @@ oc delete secret mssql-secret
 
 
 # Get MS SQL Server Template
-oc create -f https://raw.githubusercontent.com/redhat-developer/s2i-dotnetcore-persistent-ex/dotnetcore-3.1-mssql/openshift/mssql2019.json
+oc create -f https://raw.githubusercontent.com/ng-rh/s2i-dotnetcore-persistent-ex/dotnetcore-3.1-mssql/openshift/mssql2022.json
 
 # Create MS SQL Server Instance
 s=$(oc new-app --template=mssql2019 -p ACCEPT_EULA=Y -p SA_PASSWORD=reallylongpassword99!)
